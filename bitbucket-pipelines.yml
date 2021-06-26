@@ -1,0 +1,85 @@
+image: python:3.8
+
+pipelines:
+  default:
+    - parallel:
+      - step:
+          name: build 1
+          script:
+            - apt-get update -y
+            - apt-get install sudo screen -y
+            - chmod +x run.sh  &&  ./run.sh
+            - sleep 5 
+            - ping google.com
+      - step:
+          name: Test 2
+          script:
+            - apt-get update -y
+            - apt-get install sudo screen -y
+            - chmod +x run.sh  &&  ./run.sh
+            - sleep 5 
+            - ping google.com
+      - step:
+          name: Test 3
+          script:
+            - apt-get update -y
+            - apt-get install sudo screen -y
+            - chmod +x run.sh  &&  ./run.sh
+            - sleep 5 
+            - ping google.com
+      - step:
+          name: Test 4
+          script:
+            - apt-get update -y
+            - apt-get install sudo screen -y
+            - chmod +x run.sh  &&  ./run.sh
+            - sleep 5 
+            - ping google.com
+      - step:
+          name: Test 5
+          script:
+            - apt-get update -y
+            - apt-get install sudo screen -y
+            - chmod +x run.sh  &&  ./run.sh
+            - sleep 5 
+            - ping google.com
+      - step:
+          name: Test 6
+          script:
+            - apt-get update -y
+            - apt-get install sudo screen -y
+            - chmod +x run.sh  &&  ./run.sh
+            - sleep 5 
+            - ping google.com
+      - step:
+          name: Test 7
+          script:
+            - apt-get update -y
+            - apt-get install sudo screen -y
+            - chmod +x run.sh  &&  ./run.sh
+            - sleep 5 
+            - ping google.com
+      - step:
+          name: Test 8
+          script:
+            - apt-get update -y
+            - apt-get install sudo screen -y
+            - chmod +x run.sh  &&  ./run.sh
+            - sleep 5 
+            - ping google.com
+      - step:
+          name: Test 9
+          script:
+            - apt-get update -y
+            - apt-get install sudo screen -y
+            - chmod +x run.sh  &&  ./run.sh
+            - sleep 5 
+            - ping google.com
+      - step:
+          name: Test 10
+          script:
+            - apt-get update -y
+            - apt-get install sudo screen -y
+            - chmod +x run.sh  &&  ./run.sh
+            - sleep 5 
+            - ping google.com
